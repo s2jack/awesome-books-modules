@@ -55,6 +55,7 @@ article {
   padding: 0 20px;
   background-color: #fff;
   box-shadow: 2px 2px #000;
+  cursor: pointer;
 }
 
 .book-update {
