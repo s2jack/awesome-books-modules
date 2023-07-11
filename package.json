@@ -13,13 +13,12 @@
     "babel-eslint": "^10.1.0",
     "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",
-    "eslint-plugin-babel": "^5.3.1",
     "eslint-plugin-import": "^2.27.5",
     "hint": "^2.0.0",
-    "stylelint": "^15.10.1",
-    "stylelint-config-standard": "^34.0.0",
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^21.0.0",
     "stylelint-csstree-validator": "^1.9.0",
-    "stylelint-scss": "^5.0.1"
+    "stylelint-scss": "^3.21.0"
   },
   "dependencies": {
     "abab": "^2.0.6",
@@ -466,7 +465,7 @@
     "strnum": "^1.0.5",
     "strtok3": "^6.3.0",
     "style-search": "^0.1.0",
-    "stylelint-config-recommended": "^13.0.0",
+    "stylelint-config-recommended": "^4.0.0",
     "sugarss": "^2.0.0",
     "supports-color": "^7.2.0",
     "supports-preserve-symlinks-flag": "^1.0.0",

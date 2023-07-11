@@ -25,6 +25,7 @@ bookListContainer.className = 'book-list border full-width'
 bookListSection.appendChild(bookListContainer)
 
 class BookList {
+  // eslint-disable-next-line
   loadBookSection = () => {
     const bookDB = JSON.parse(localStorage.getItem("bookData"));
     listButton.style = 'color: rgba(100, 126, 255, 1);';
