@@ -1,5 +1,3 @@
-/* eslint arrow-body-style: ["error", "always"] */
-
 const addBookSection = document.querySelector('#add-book-section');
 const contactSection = document.querySelector('#contact-section');
 const titleInput = document.querySelector('#title');
