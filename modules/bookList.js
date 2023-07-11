@@ -1,3 +1,5 @@
+/* eslint arrow-body-style: ["error", "always"] */
+
 const addBookSection = document.querySelector('#add-book-section');
 const contactSection = document.querySelector('#contact-section');
 const titleInput = document.querySelector('#title');
@@ -16,35 +18,34 @@ class Book {
 }
 
 // load book section function
-const bookListHeading = document.createElement('h1')
-bookListHeading.className = 'heading'
-bookListHeading.innerText = 'All Awesome Books'
-bookListSection.appendChild(bookListHeading)
+const bookListHeading = document.createElement('h1');
+bookListHeading.className = 'heading';
+bookListHeading.innerText = 'All Awesome Books';
+bookListSection.appendChild(bookListHeading);
 const bookListContainer = document.createElement('div');
-bookListContainer.className = 'book-list border full-width'
-bookListSection.appendChild(bookListContainer)
+bookListContainer.className = 'book-list border full-width';
+bookListSection.appendChild(bookListContainer);
 
 class BookList {
-  // eslint-disable-next-line
   loadBookSection = () => {
     const bookDB = JSON.parse(localStorage.getItem("bookData"));
     listButton.style = 'color: rgba(100, 126, 255, 1);';
     addBookButton.style = '';
     contactButton.style = '';
     bookListSection.style = '';
-    addBookSection.style = 'display: none;'
-    contactSection.style = 'display: none;'
+    addBookSection.style = 'display: none;';
+    contactSection.style = 'display: none;';
     // check the local storage if there is any database for books list
     if (bookDB === null || bookDB.length === 0) {
-    // if booklistContainer has a child element return
+      // if booklistContainer has a child element return
       if (bookListContainer.hasChildNodes()) {
-        return
+        return;
     // if bookListContiner has no child put a text. it means user has no any book added at your bookList
       } else {
-        const noteText = document.createElement('p')
-        noteText.innerText = 'Please add some books to your list'
-        noteText.className = 'note-text'
-        bookListContainer.appendChild(noteText)
+        const noteText = document.createElement('p');
+        noteText.innerText = 'Please add some books to your list';
+        noteText.className = 'note-text';
+        bookListContainer.appendChild(noteText);
         return;
       }
     }
@@ -70,7 +71,6 @@ class BookList {
   addBook = () => {
     // check bookDB if it is empty, then give it an empty array
     const bookDB = JSON.parse(localStorage.getItem("bookData")) || [];
-    console.log('function is running...')
     /* if inputs are not empty */
     if (titleInput.value && authorInput.value) {
       // create a book with input values for title and author
