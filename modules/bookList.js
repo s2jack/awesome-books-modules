@@ -86,7 +86,9 @@ class BookList {
     // call the existing database as an array
     const bookDB = JSON.parse(localStorage.getItem("bookData"));
     // filter the existing array to create a new array without the removed book
-    const newBookData = bookDB.filter((book) => {book.id !== id});
+    const newBookData = bookDB.filter((book) => {
+      return book.id !== id;
+    });
     // then set it as the bookDatabase on localStorage
     localStorage.setItem("bookData", JSON.stringify(newBookData));
     // then reload the page to refresh the book list section
